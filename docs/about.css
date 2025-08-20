@@ -15,21 +15,25 @@ h1 {
 
 .container {
   display: flex;
+  flex-direction: column;
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .left-side {
   flex: 1;
+  width: 100%;
 }
 
 .right-side {
   flex: 1;
+  width: 100%;
 }
 
 .about-text {
-  margin-bottom: 20px;
+  word-wrap: break-word;
   line-height: 1.6;
 }
 
@@ -50,8 +54,8 @@ button {
   background-color: #1e293b;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 12px 24px;
+  font-size: 1.2em;
   border-radius: 5px;
   cursor: pointer;
 }
