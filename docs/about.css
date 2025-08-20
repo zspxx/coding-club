@@ -1,4 +1,4 @@
-\body {
+body {
   background-color: #0f172a;
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -31,7 +31,7 @@ h1 {
     flex: 1 1 100%;
   }
 }
-\\\\\\\\\
+
 .about-text {
   word-wrap: break-word;
   line-height: 1.6;
