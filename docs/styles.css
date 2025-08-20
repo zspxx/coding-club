@@ -1,0 +1,185 @@
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+#welcome-text {
+  font-size: 2.5em;
+  margin-top: 15vh;
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+#subtext {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1s;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  height: 300px;
+}
+
+button {
+  background-color: #1e293b;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #334155;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#not-interested {
+  position: relative;
+  transition: left 0.5s ease, top 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  resize: none;
+}
+
+button {
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #334155;
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, 5px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.comment {
+  background-color: #334155;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  animation: floatAround 8s ease-in-out infinite;
+  position: relative;
+  max-width: 500px;    
+  border: 2px solid;
+  box-sizing: border-box;
+
+  white-space: normal;   
+  word-wrap: break-word;   
+  overflow-wrap: break-word; 
+
+  overflow-x: hidden;       
+  overflow-y: visible;      
+
+  line-height: 1.4em;
+}
+
+.comments-list {
+  background-color: #1e293b;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;   
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 520px;   
+}
+
