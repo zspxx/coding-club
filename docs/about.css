@@ -16,7 +16,7 @@ h1 {
 .container {
   display: flex;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -24,6 +24,7 @@ h1 {
 .left-side, .right-side {
   flex: 1;
   min-width: 300px;
+  max-width: 400px;
 }
 
 .left-side {
